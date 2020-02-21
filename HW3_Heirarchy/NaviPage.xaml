@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Heirarchy.NaviPage"
+             Title="Lake Malawi"
+             BackgroundColor="LightBlue"
+             Appearing="Page_Appearing"
+             Disappearing="Page_Disappearing">
+
+    <ContentPage.Content>        
+        <StackLayout HorizontalOptions="StartAndExpand"
+                     VerticalOptions="StartAndExpand"
+                     Margin="10,0,10,0">
+            
+            <Label Text="Lake Malawi"
+                   TextColor="Black"
+                   FontSize="40"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   TextDecorations="Underline" />
+
+            <ScrollView Margin="10,0,10,5">
+                <Label Text="Lake Malawi in Africa ranks among the world's largest lakes, being the third deepest and ninth largest by surface area. Its geography reflects the fact that it is situated in a rift valley, with the lake being long, relatively narrow, and deep. Its basin consists of a series of half-grabens (blocks of earth that have tilted and dropped during rifting). Some parts of the lakeshore are bordered by steep mountains, while the mountains that define the edges of the rift valley are separated from the lake by extensive lakeshore plains in other parts. As a result, nearshore topography varies between gently sloping beaches and steep, rocky coastline. The lake is underlain by more than 4km of sediment in its deepest regions, reflecting its great age, estimated at several million years. No lake in the world contains such a diversified collection and distinct community of cichlid fishies as Lake Malawi. Over the years, Malawi cichlids have become very popular among aquarists as they are easy to maintain and breed in captivity. The total number of cichlid species in the lake is now estimated at about 1000, which is about 200 species more than all of the freshwater species found in all of North America combined! There are many more species that have still not been discovered. Life in Malawi revolves around the tides of the Lake as its rich abundances of fish are a main source of food for both human and animals alike, all sharing its bounty. The scenic beauty of the Lake is legendary, where reeds sway in the cool breeze, monkeys rustle in the trees above you, fish Eagle's cry pierce the big African sky, a fisherman casts his net into the shimmering depths whilst hippos graze neutrally beneath distant mountains in the background. "
+                       TextColor="Gray"
+                       FontSize="14" />
+            </ScrollView>
+
+            <Button Text="Malawi Fun Facts"   
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="5"                    
+                    WidthRequest="175"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Clicked="FactsPageClick" />
+            
+            <Button Text="Lake Malawi Pics"
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="5"                     
+                    WidthRequest="175"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="LakePageClick" />
+
+            <Button Text="Lake Malawi Fish"
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="5"                    
+                    WidthRequest="175"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="FishPageClick" />            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

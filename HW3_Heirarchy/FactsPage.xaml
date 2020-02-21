@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Heirarchy.FactsPage"
+             Title = "Fun Facts"
+             BackgroundColor="LightBlue">
+             
+    <ContentPage.Content>
+        <StackLayout Margin="15,70,15,0">
+            <Label Text="There are many fun facts about Lake Malawi!"
+                   x:Name="FactsLabel"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   LineBreakMode="WordWrap"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Margin="15,0,15,210">
+                <Button Text="Click for a Fun Fact!"
+                        BackgroundColor="LightSteelBlue"   
+                        CornerRadius="5"
+                        VerticalOptions="StartAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="FactButton_Clicked"/>
+            </StackLayout>                   
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

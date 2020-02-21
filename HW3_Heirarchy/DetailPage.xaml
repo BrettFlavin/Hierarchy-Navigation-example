@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Heirarchy.DetailPage"
+             Title="Details"
+             BackgroundColor="LightBlue">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,5,20,20">
+            <Label Text="Description"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="StartAndExpand"/>
+                              
+            <Image Source="{Binding theURL}"
+                   VerticalOptions="StartAndExpand"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   Aspect="AspectFit"/>
+
+            <Label Text="{Binding theDetails}"
+                   TextColor="Black"
+                   FontSize="Small"
+                   VerticalOptions="StartAndExpand"                    
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   LineBreakMode="WordWrap"/>
+
+            <Button Text="Home"
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="5"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="Center"                     
+                    Clicked="OnHomeButton_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

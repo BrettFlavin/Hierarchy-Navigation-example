@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Heirarchy.FishPage"
+             Title = "Fish Pics"
+             BackgroundColor="LightBlue">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="African Cichlids"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="StartAndExpand"/>
+
+            <ListView ItemsSource="{Binding FishPics}"
+                      HasUnevenRows="true"
+                      ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding ImageURL}"            
+                                       Aspect="AspectFill"
+                                       HeightRequest="60"
+                                       WidthRequest="60" 
+                                       Grid.RowSpan="2"/>
+
+                                <Label Text="{Binding Scientificname}"
+                                       FontAttributes="Bold"
+                                       Grid.Row="0"
+                                       Grid.Column="1" />
+
+                                <Label Text="{Binding Nickname}"
+                                       FontAttributes="Italic"
+                                       Grid.Row="1"
+                                       Grid.Column="1"               
+                                       VerticalOptions="End" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
