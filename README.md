@@ -51,9 +51,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-I'm a big fan of fishkeeping and African Cichlids, so I decided to make an educational little app using Xamarin.Forms to learn a bit about hierarchy navigation and also show off some cool fish! The fish pictured in this app live in a 7 foot 200g tank in my living room.
+I'm a big fan of fishkeeping and African Cichlids, so I decided to make an educational little app using Xamarin.Forms to learn a bit about hierarchy navigation and also show off some cool fish! The fish pictured in this app live in a 7 foot 200g tank in my living room, but they originally come from Lake Malawi in Africa.
 
-This app demonstrates hierarchy navigation in Xamarin.Forms by using a root page with a short description of Lake Malawi in Africa and 3 buttons for "Facts", Lake Pics", and "Fish Pics". We use the PushAsync() and PopAsync() methods to "push" and "pop" the pages from the navigation stack. The PopToRootAsync() method is used when the home page button is clicked to pop all but the root page off the stack. 
+This app demonstrates hierarchy navigation in Xamarin.Forms by using a root page with a short description of Lake Malawi and 3 buttons for "Facts", Lake Pics", and "Fish Pics". We use the PushAsync() and PopAsync() methods to "push" and "pop" the pages from the navigation stack. The PopToRootAsync() method is used when the home page button is clicked to pop all but the root page off the stack. 
 * Clicking on the "Facts" button will display a random fact about Lake Malawi when the button is clicked
 * Clicking on the "Lake Pics" button will display a list of Lake Malawi pictures which can be clicked on for more details 
 * Clicking on the "Fish Pics" Button will display a list of lake Malawi fish pictures which can be clicked on for more details
