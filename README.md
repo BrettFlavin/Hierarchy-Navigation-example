@@ -77,6 +77,10 @@ This application was created in Visual Studio 2019 using Xamarin.Forms to target
 
 Here are some example screenshots of the application running on an Android device:
 
+![screenshot5](https://github.com/BrettFlavin/Hierarchy-Navigation-example/blob/master/screenshot5.PNG)![screenshot6](https://github.com/BrettFlavin/Hierarchy-Navigation-example/blob/master/screenshot6.PNG)
+
+
+
 ![screenshot2](https://github.com/BrettFlavin/Hierarchy-Navigation-example/blob/master/screenshot2.PNG)
 
 
