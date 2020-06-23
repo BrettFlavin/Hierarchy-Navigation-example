@@ -81,7 +81,7 @@ Here are some example screenshots of the application running on an Android devic
 
 
 
-![screenshot3](https://github.com/BrettFlavin/Hierarchy-Navigation-example/blob/master/screenshot2.PNG)
+![screenshot3](https://github.com/BrettFlavin/Hierarchy-Navigation-example/blob/master/screenshot3.PNG)
 
 
 
