@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="HW3_Heirarchy.FactsPage"
              Title = "Fun Facts"
-             BackgroundColor="LightBlue">
+             BackgroundImageSource="lakeBG.jpg">
              
     <ContentPage.Content>
         <StackLayout Margin="15,70,15,0">

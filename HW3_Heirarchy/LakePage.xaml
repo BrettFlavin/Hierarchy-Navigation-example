@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="HW3_Heirarchy.LakePage"
              Title = "Lake Pics"             
-             BackgroundColor="LightBlue">
+             BackgroundImageSource="lakeBG.jpg">
     
     <ContentPage.Content>
         <StackLayout Margin="20,35,20,20">            

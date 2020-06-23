@@ -1,24 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="HW3_Heirarchy.FishPage"
-             Title = "Fish Pics"
-             BackgroundColor="LightBlue">
-    
+<ContentPage
+    x:Class="HW3_Heirarchy.FishPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Fish Pics"
+    BackgroundImageSource="lakeBG.jpg"
+    mc:Ignorable="d">
+
     <ContentPage.Content>
         <StackLayout Margin="20,35,20,20">
-            <Label Text="African Cichlids"
-                   FontAttributes="Bold"
-                   FontSize="Large"
-                   VerticalOptions="StartAndExpand" 
-                   HorizontalOptions="StartAndExpand"/>
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="StartAndExpand"
+                Text="African Cichlids"
+                VerticalOptions="StartAndExpand" />
 
-            <ListView ItemsSource="{Binding FishPics}"
-                      HasUnevenRows="true"
-                      ItemTapped="ListView_ItemTapped">
+            <ListView
+                HasUnevenRows="true"
+                ItemTapped="ListView_ItemTapped"
+                ItemsSource="{Binding FishPics}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -32,22 +35,25 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="{Binding ImageURL}"            
-                                       Aspect="AspectFill"
-                                       HeightRequest="60"
-                                       WidthRequest="60" 
-                                       Grid.RowSpan="2"/>
+                                <Image
+                                    Grid.RowSpan="2"
+                                    Aspect="AspectFill"
+                                    HeightRequest="60"
+                                    Source="{Binding ImageURL}"
+                                    WidthRequest="60" />
 
-                                <Label Text="{Binding Scientificname}"
-                                       FontAttributes="Bold"
-                                       Grid.Row="0"
-                                       Grid.Column="1" />
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    FontAttributes="Bold"
+                                    Text="{Binding Scientificname}" />
 
-                                <Label Text="{Binding Nickname}"
-                                       FontAttributes="Italic"
-                                       Grid.Row="1"
-                                       Grid.Column="1"               
-                                       VerticalOptions="End" />
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    FontAttributes="Italic"
+                                    Text="{Binding Nickname}"
+                                    VerticalOptions="End" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

@@ -21,6 +21,7 @@ namespace HW3_Heirarchy
             public string ImageURL { get; set; }            // the url of a fish pic
             public string details { get; set; }             // extra details about the pic
         }
+
         // collection to hold fish pics - our ItemSource for the FishPage ListView
         public ObservableCollection<MalawiFish> FishPics { get; private set; }
 

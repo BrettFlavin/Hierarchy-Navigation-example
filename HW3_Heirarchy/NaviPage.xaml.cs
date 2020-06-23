@@ -34,19 +34,7 @@ namespace HW3_Heirarchy
         async void FishPageClick(object sender, System.EventArgs e)
         {           
             await Navigation.PushAsync(new FishPage());
-        }
-
-        // Called on home page being navigated to
-        private void Page_Appearing(object sender, EventArgs e)
-        {
-            DisplayAlert("Well Hello There!", "Home Page is Appearing!", "OK");
-        }
-
-        // Called on home page being navigated from
-        private void Page_Disappearing(object sender, EventArgs e)
-        {
-            DisplayAlert("Come Back Soon!", "Home Page is Disappearing!", "OK");
-        }    
+        }       
         
     }
 }
